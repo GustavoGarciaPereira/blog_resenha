@@ -1,14 +1,10 @@
-from django.shortcuts import render
-
-# Create your views here.
-
-
 from rest_framework import generics
 from .models import Post
 from .serializers import PostSerializer
 from rest_framework import viewsets
 from rest_framework.response import Response
-# Create your views here.
+
+
 class PostsList(viewsets.ViewSet):
                            
     def list(self, request):
